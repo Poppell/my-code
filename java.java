@@ -38,14 +38,11 @@ public class Cat
     public void initialize(int weight, String color){
         this.weight = weight;
         this.color = color;
-        this.name = null;
-        this.street = null;
 
     }
     public void initialize(int weight, String color, String street){
         this.weight = weight;
         this.color = color;
         this.street = street;
-        this.name = null;
     }
 }
