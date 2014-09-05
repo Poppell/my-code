@@ -13,14 +13,16 @@ package com.javarush.test.level05.lesson07.task02;
 public class Cat
 {
     //Напишите тут ваш код
-    String name;
-    int weight = 100;
-    int age = 10;
-    String color;
-    String street;
+    private String name;
+    private int weight;
+    private int age;
+    private String color;
+    private String street;
 
     public void initialize(String name){
         this.name = name;
+        this.weight = 100;
+        this.age = 10;
     }
 
     public void initalize(String name, int weight, int age){
@@ -32,17 +34,21 @@ public class Cat
     public void initialize(String name,int age){
         this.name = name;
         this.age = age;
+        this.weight = 100;
 
     }
 
     public void initialize(int weight, String color){
         this.weight = weight;
         this.color = color;
+        this.age = 10;
+
 
     }
     public void initialize(int weight, String color, String street){
         this.weight = weight;
         this.color = color;
         this.street = street;
+        this.age = 10;
     }
 }
