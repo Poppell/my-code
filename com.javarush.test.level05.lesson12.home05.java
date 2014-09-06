@@ -13,12 +13,12 @@ public class Solution
     {
         //Напишите тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int k;
+        int k = 0;
         while(true){
             String string = reader.readLine();
             if(string.equals("сумма")){
-                break;
                 System.out.println(k);
+                break;
             }else{
                 int i = Integer.parseInt(string);
                 k += i;
@@ -26,4 +26,3 @@ public class Solution
         }
     }
 }
-
