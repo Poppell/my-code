@@ -12,26 +12,18 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //Напишите тут ваш код
-        int suma;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        //int i = Integer.parseInt(reader.readLine());
+        int k;
         while(true){
-            if(checkString(reader.readLine())){
+            String string = reader.readLine();
+            if(string.equals("сумма")){
                 break;
-                System.out.println(suma);
-            } else {
-                int i = Integer.parseInt(reader.readLine());
-                suma += i;
+                System.out.println(k);
+            }else{
+                int i = Integer.parseInt(string);
+                k += i;
             }
         }
     }
-
-    public static boolean checkString(String string) {
-        try {
-            Integer.parseInt(string);
-        } catch (Exception e) {
-            return false;
-        }
-        return true;
-    }
 }
+
