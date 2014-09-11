@@ -43,10 +43,10 @@ public class Solution
 
        Cat GF = new Cat(GFname);
         Cat GM = new Cat(GMname);
-        Cat F = new Cat(Fname, GFname, null);
-        Cat M = new Cat(Mname, null, GMname);
-        Cat S = new Cat(Sname, Fname, Mname);
-        Cat D = new Cat(Dname, Fname, Mname);
+        Cat F = new Cat(Fname, GF, null);
+        Cat M = new Cat(Mname, null, GM);
+        Cat S = new Cat(Sname, F, Me);
+        Cat D = new Cat(Dname, F, M);
 
         System.out.println(GF);
         System.out.println(GM);
