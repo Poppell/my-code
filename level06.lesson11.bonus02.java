@@ -71,7 +71,7 @@ public class Solution
         {
             this.name = name;
             this.F = F;
-            this.F = M;
+            this.M = M;
         }
 
 
@@ -79,7 +79,7 @@ public class Solution
         public String toString()
         {
             if ((M == null) && (F == null))
-                return "Cat name is " + name + ", no mother ";
+                return "Cat name is " + name + ", no mother, no father ";
             else if((M == null) && !(F == null))
                 return "Cat name is " + name + ", no mother, father is " + F.name;
             else if(!(M == null) && (F == null))
