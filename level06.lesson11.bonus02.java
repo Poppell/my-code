@@ -88,7 +88,7 @@ public class Solution
             else if((M != null) && (F == null))
                 return "Cat name is " + name + ", mother is " + M.name + ", no father";
             else
-                return "Cat name is " + name + ", morher is " + M.name + ", father is " + F.name;
+                return "Cat name is " + name + ", mother is " + M.name + ", father is " + F.name;
         }
     }
 }
