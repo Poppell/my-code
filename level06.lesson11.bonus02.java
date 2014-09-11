@@ -80,9 +80,9 @@ public class Solution
         {
             if ((M == null) && (F == null))
                 return "Cat name is " + name + ", no mother, no father ";
-            else if((M == null) && !(F == null))
+            else if((M == null) && (F != null))
                 return "Cat name is " + name + ", no mother, father is " + F.name;
-            else if(!(M == null) && (F == null))
+            else if((M != null) && (F == null))
                 return "Cat name is " + name + ", mother is " + M.name + ", no father";
             else
                 return "Cat name is " + name + ", morher is " + M.name + ", father is " + F.name;
