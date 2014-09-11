@@ -65,6 +65,9 @@ public class Solution
         Cat(String name)
         {
             this.name = name;
+            this.F = null;
+            this.M = null;
+            
         }
 
         Cat(String name, Cat F, Cat M)
