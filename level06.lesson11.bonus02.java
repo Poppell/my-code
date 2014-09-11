@@ -45,7 +45,7 @@ public class Solution
         Cat GM = new Cat(GMname);
         Cat F = new Cat(Fname, GF, null);
         Cat M = new Cat(Mname, null, GM);
-        Cat S = new Cat(Sname, F, Me);
+        Cat S = new Cat(Sname, F, M);
         Cat D = new Cat(Dname, F, M);
 
         System.out.println(GF);
