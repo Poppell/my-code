@@ -41,8 +41,8 @@ public class Solution
         String Dname= reader.readLine();
 
 
-       Cat GF = new Cat(GFname, null, null);
-        Cat GM = new Cat(GMname, null, null);
+       Cat GF = new Cat(GFname);
+        Cat GM = new Cat(GMname);
         Cat F = new Cat(Fname, GFname, null);
         Cat M = new Cat(Mname, null, GMname);
         Cat S = new Cat(Sname, Fname, Mname);
