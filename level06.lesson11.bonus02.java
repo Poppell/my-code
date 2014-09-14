@@ -27,10 +27,8 @@ Cat name is сын Мурчик, mother is мама Василиса, father is 
 Cat name is дочь Пушинка, mother is мама Василиса, father is папа Котофей
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws IOException
-    {
+public class Solution {
+    public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String GFname = reader.readLine();
@@ -38,10 +36,10 @@ public class Solution
         String Fname = reader.readLine();
         String Mname = reader.readLine();
         String Sname = reader.readLine();
-        String Dname= reader.readLine();
+        String Dname = reader.readLine();
 
 
-       Cat GF = new Cat(GFname);
+        Cat GF = new Cat(GFname);
         Cat GM = new Cat(GMname);
         Cat F = new Cat(Fname, GF, null);
         Cat M = new Cat(Mname, null, GM);
@@ -56,39 +54,36 @@ public class Solution
         System.out.println(D);
     }
 
-    public static class Cat
-    {
+    public static class Cat {
         private String name;
+
         private Cat F;
         private Cat M;
 
-        Cat(String name)
-        {
+        Cat(String name){
             this.name = name;
             this.F = null;
             this.M = null;
-            
         }
 
-        Cat(String name, Cat F, Cat M)
-        {
+        Cat(String name, Cat F, Cat M) {
             this.name = name;
-            this.F = F;
             this.M = M;
-        }
+            this.F = F;
 
+        }
 
         @Override
-        public String toString()
-        {
+        public String toString() {
             if ((M == null) && (F == null))
                 return "Cat name is " + name + ", no mother, no father ";
-            else if((M == null) && (F != null))
+            else if (M == null && F != null)
                 return "Cat name is " + name + ", no mother, father is " + F.name;
-            else if((M != null) && (F == null))
-                return "Cat name is " + name + ", mother is " + M.name + ", no father";
+            else if (M != null && F == null)
+                return "Cat name is " + name + ", mother is " + M.name + ", no father ";
             else
                 return "Cat name is " + name + ", mother is " + M.name + ", father is " + F.name;
+
         }
     }
 }
