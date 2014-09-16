@@ -24,7 +24,7 @@ public class Solution
         Human father = new Human("Лось", true, 55, GF1, GM1);
         Human mother = new Human("Лосиха", false, 53, GF2, GM2);
         Human son = new Human("Лосёнок", true, 21, father, mother);
-        Human doughter = new Human("Лосасиха", false, 19, father, mother);
+        Human daughter = new Human("Лосасиха", false, 19, father, mother);
 
         System.out.println(GF1);
         System.out.println(GM1);
@@ -33,7 +33,7 @@ public class Solution
         System.out.println(father);
         System.out.println(mother);
         System.out.println(son);
-        System.out.println(doughter);
+        System.out.println(daughter);
     }
 
     public static class Human
